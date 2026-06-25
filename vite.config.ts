@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Força o Nitro a gerar os arquivos no formato correto da Vercel
+  nitro: {
+    preset: "vercel"
+  }
 });
